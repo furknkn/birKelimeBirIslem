@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#6854d9"
+    tools:context=".ActivityIslem">
+
+    <ImageView
+        android:id="@+id/imgBos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/calc" />
+
+
+    <TextView
+        android:id="@+id/txtIslemSonuc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+android:text="0"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="52dp"
+        android:textSize="80dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:background="#fff"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtSonuc"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+
+        />
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:id="@+id/pls"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/txtSonuc"
+        android:layout_marginRight="25dp"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/plus" />
+
+    <ImageView
+        android:id="@+id/minus"
+        android:layout_width="wrap_content"
+        android:layout_marginRight="25dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pls"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/minus" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/carpi"
+        android:layout_marginRight="25dp"
+        android:layout_below="@+id/minus"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/close" />
+
+    <ImageView
+        android:id="@+id/bolme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/carpi"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="25dp"
+        android:src="@drawable/division" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/cir1"
+        android:gravity="center"
+        android:layout_below="@+id/txtSonuc"
+        android:layout_alignParentStart="true"
+        android:textSize="50dp"
+        android:background="@drawable/circlee" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/cir2"
+        android:gravity="center"
+        android:layout_marginLeft="10dp"
+        android:textSize="50dp"
+        android:layout_toRightOf="@id/cir1"
+        android:layout_alignTop="@id/cir1"
+        android:layout_height="wrap_content"
+        android:background="@drawable/circlee" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/circlee"
+        android:layout_toRightOf="@id/cir2"
+        android:textSize="50dp"
+        android:gravity="center"
+        android:layout_alignTop="@id/cir2"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/cir3"/>
+
+    <TextView
+        android:id="@+id/cir4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cir1"
+        android:gravity="center"
+        android:textSize="50dp"
+        android:layout_alignStart="@+id/cir1"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/circlee" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/circlee"
+        android:layout_toRightOf="@id/cir4"
+        android:layout_alignTop="@id/cir4"
+        android:gravity="center"
+        android:textSize="50dp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/cir5"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/cir5"
+        android:layout_marginLeft="10dp"
+        android:textSize="50dp"
+        android:text="3"
+        android:gravity="center"
+        android:layout_alignTop="@id/cir5"
+        android:background="@drawable/circlee"
+        android:id="@+id/cir6"/>
+
+    <TextView
+        android:id="@+id/txtIslemAd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/imgBos"
+        android:layout_centerHorizontal="true"
+        android:text="222222"
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/txistenilenSayi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgBos"
+        android:layout_alignParentEnd="true"
+        android:text="222"
+        android:textSize="20dp" />
+    <Button
+
+        android:drawableLeft="@drawable/reeturn"
+        android:text="sıfırla"
+        android:id="@+id/islemSifirla"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"/>
+
+    <Button
+        android:id="@+id/islemBitir"
+        android:layout_width="wrap_content"
+        android:drawableLeft="@drawable/fiinal"
+        android:text="bitir"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"/>
+
+    <Button
+        android:text="tekrar dene"
+        android:id="@+id/islemTekarar"
+        android:layout_width="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

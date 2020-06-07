@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#00a260"
+    android:layout_height="match_parent"
+    tools:context=".ActivityKelime">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:src="@drawable/abc"
+        android:layout_marginTop="10dp"
+        android:id="@+id/Image1"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/adtxt"
+        android:layout_marginTop="4dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Image1"
+        android:layout_centerHorizontal="true"
+        android:text="Kullanıcı"
+        android:textSize="22dp" />
+
+    <TextView
+        android:id="@+id/txtKelime"
+        android:layout_width="match_parent"
+android:layout_marginBottom="20dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnBiter"
+        android:layout_alignParentStart="true"
+        android:background="#abe1e4"
+        android:textSize="40dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+android:backgroundTint="@color/colorbuton"
+
+        android:id="@+id/btnBiter"
+        android:drawableLeft="@drawable/correct"
+        android:text="Onayla"
+        android:layout_marginBottom="30dp"
+        android:layout_above="@+id/txt1"
+        android:layout_centerHorizontal="true" />
+
+
+    <TextView
+        android:id="@+id/txt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="60dp"
+        android:layout_marginBottom="160dp"
+        android:background="@drawable/temx"
+        android:paddingLeft="10dp"
+        android:textSize="35dp" />
+
+    <TextView
+        android:id="@+id/txt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="30dp"
+
+        android:layout_marginBottom="160dp"
+        android:layout_toRightOf="@+id/txt1"
+        android:background="@drawable/temx"
+        android:paddingLeft="10dp"
+        android:textSize="35dp" />
+    <TextView
+        android:id="@+id/txt3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="30dp"
+
+        android:layout_marginBottom="160dp"
+        android:layout_toRightOf="@+id/txt2"
+        android:background="@drawable/temx"
+        android:paddingLeft="10dp"
+        android:textSize="35dp" />
+    <TextView
+        android:id="@+id/txt4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="30dp"
+
+        android:layout_marginBottom="160dp"
+        android:layout_toRightOf="@+id/txt3"
+        android:background="@drawable/temx"
+        android:paddingLeft="10dp"
+        android:textSize="35dp" />
+
+    <TextView
+        android:id="@+id/txt5"
+        android:textSize="35dp"
+
+        android:paddingLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/txt1"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="80dp"
+        android:background="@drawable/temx" />
+
+    <TextView
+    android:id="@+id/txt6"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+        android:textSize="35dp"
+
+        android:paddingLeft="10dp"
+    android:layout_alignTop="@+id/txt5"
+    android:layout_marginStart="30dp"
+    android:layout_toEndOf="@+id/txt5"
+    android:background="@drawable/temx" />
+    <TextView
+        android:id="@+id/txt7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="35dp"
+
+        android:paddingLeft="10dp"
+        android:layout_alignTop="@+id/txt5"
+        android:layout_marginStart="30dp"
+        android:layout_toEndOf="@+id/txt6"
+        android:background="@drawable/temx" />
+
+    <TextView
+        android:id="@+id/star"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginBottom="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/txt7"
+        android:background="@drawable/star" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:imeOptions="actionDone"
+        android:layout_marginLeft="40dp"
+        android:layout_marginBottom="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/txt7"
+        android:id="@+id/txtBonus"
+        android:inputType="text"
+        android:maxLength="1" />
+
+    <Button
+        android:id="@+id/btnSifirla"
+android:text="Sıfırla"
+        android:drawableLeft="@drawable/replay"
+        android:layout_width="120dp"
+        android:backgroundTint="@color/colorbuton"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true" />
+
+    <Button
+        android:id="@+id/btnBitir"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorbuton"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="Tekrar oyna" />
+
+    <Button
+        android:id="@+id/btnTekrarOyna"
+        android:layout_width="120dp"
+        android:text="Bitir"
+        android:backgroundTint="@color/colorbuton"
+        android:drawableLeft="@drawable/success"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true" />
+</RelativeLayout>
